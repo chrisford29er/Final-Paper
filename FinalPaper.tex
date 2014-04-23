@@ -110,10 +110,16 @@ We describe the motivation, design, and evaluation of the Campus Sherpa app, whi
 
 MIT receives a number of visitors each day from various demographics- prospective
 undergraduates/graduates, tourists visiting Boston/Cambridge, professionals or researchers
-attending a conference on campus, middle school students enrolled in  Splash,  etc. Many of
+attending a conference on campus, middle school students enrolled in Splash,  etc. Many of
 these visitors will take a campus tour which will take them to the main sights at MIT, such as the Student Center, gymnasium, auditorium, main hallway, and architecturally impressive computer science laboratory). However, this ``one size fits all'' nature of the tour fails to take into account the interests of each visitor and show them all the sights that they would enjoy seeing. For instance, it is plausible that a prospective graduate student in biology would like to follow a tour of the biology labs, while a tourist interested in history would like to be taken to the most historically important sites at MIT. 
 
-Motivated by this observation, we first identified the types of people touring MIT. We decided that for the purposes of campus tours, we can broadly classify people as current students, prospective freshmen, parents, and tourists. In order to gather information about these groups, we conducted a survey of these four groups, with some questions common to all four groups and some tailored to a specific group. Here are some of the questions we asked (TODO: SHORTEN QUESTION LIST IF NEEDED):
+\section{Related Works}
+(TODO: BY CHRIS)
+
+\section{Background}
+
+(TODO: EXPAND SECTION)
+Motivated by the above observation, we first identified the types of people touring MIT. We decided that for the purposes of campus tours, we can broadly classify people as current students, prospective freshmen, parents, and tourists. In order to gather information about these groups, we conducted a survey of these four groups, with some questions common to all four groups and some tailored to a specific group. Here are some of the questions we asked (TODO: SHORTEN QUESTION LIST IF NEEDED):
 
 \textbf{Everyone}:
 
@@ -164,7 +170,16 @@ Approximately twenty people responded to the survey, evenly distributed across t
 
 ``I wish I could get a better sense of MIT culture. The tour guide briefly touched on how each dorm is different, but didn't go into detail. '' (tourist)
 
-From the above responses, we saw that a common complaint was that people were not able to visit places they wanted to with the regular campus tours. In order to solve this problem, we proposed an app that helps create and share custom tours of the MIT campus called ``Campus Sherpa'' targeting the iOS platform and making use of the phone's location services, audio capabilities, and internet access. The app allows a user to create a tour by geotagging a list of tour media, share a tour by uploading it, and taking/viewing a tour from the list of uploaded tours. The combination of the above features should enable people to have a custom campus touring experience. 
+From the above responses, we saw that a common complaint was that people were not able to visit places they wanted to with the regular campus tours. In order to solve this problem, we proposed an application that helps create and share custom tours of the MIT campus called ``Campus Sherpa''.
+
+Since smartphones offer location awareness and mobility, they are the obvious platform choice for ``Campus Sherpa''. By deploying this application for iOS, users can take out their smartphone when they arrive at MIT, select a tour based on their interest, and then begin exploring sites that will be most useful to them.
+
+The second aspect of ``Campus Sherpa'' that we wished to support is to allow users to chronicle their tours and share them with others. As prospective students compare MIT to other schools or as tourists reminisce about their visit to MIT, the ability to record their tours (by associating locations with text, photos, videos, and links to related content) will aid them in remembering. For current students, this offers a way to record the precious memories they make at MIT and share them with others. Thus, the primary audience will be people who aim to tour MIT and record their experience there. The secondary audience will be current MIT students who would like to chronicle their lives at MIT.
+
+While some MIT tours will be pre-installed, the majority should be user-created.
+Based on our own experiences and the responses to our survey, people have varied tastes and desired destinations when visiting MIT, and we aimed to make sure that their trip to MIT is as enjoyable and productive as possible.
+
+By creating an application to let users create, share, and follow custom tours of MIT, we hope to make college tours custom fit to each person’s taste, to make memories of MIT easy to record and share, and to make a platform for sharing tours.
 
 \section{Page Size and Columns}
 
