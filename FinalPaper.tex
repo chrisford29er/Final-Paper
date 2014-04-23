@@ -111,7 +111,7 @@ We describe the motivation, design, and evaluation of the Campus Sherpa app, whi
 MIT receives a number of visitors each day from various demographics- prospective
 undergraduates/graduates, tourists visiting Boston/Cambridge, professionals or researchers
 attending a conference on campus, middle school students enrolled in Splash,  etc. Many of
-these visitors will take a campus tour which will take them to the main sights at MIT, such as the Student Center, gymnasium, auditorium, main hallway, and architecturally impressive computer science laboratory). However, this ``one size fits all'' nature of the tour fails to take into account the interests of each visitor and show them all the sights that they would enjoy seeing. For instance, it is plausible that a prospective graduate student in biology would like to follow a tour of the biology labs, while a tourist interested in history would like to be taken to the most historically important sites at MIT. 
+these visitors take campus tours which take them to the main sights at MIT, such as the Student Center, gymnasium, auditorium, main hallway, and architecturally impressive computer science laboratory). However, this ``one size fits all'' nature of the tour fails to take into account the interests of each visitor and show them all the sights that they would enjoy seeing. For instance, it is plausible that a prospective graduate student in biology would like to follow a tour of the biology labs, while a tourist interested in history would like to be taken to the most historically important sites at MIT. 
 
 \section{Related Works}
 (TODO: BY CHRIS)
@@ -181,6 +181,36 @@ Based on our own experiences and the responses to our survey, people have varied
 
 By creating an application to let users create, share, and follow custom tours of MIT, we hope to make college tours custom fit to each person’s taste, to make memories of MIT easy to record and share, and to make a platform for sharing tours.
 
+\section{System Description}
+
+``Campus Sherpa'' allows users to achieve two goals: 
+
+\begin{itemize}
+	\item Take custom tours
+	\item Create tours based on experiences.
+\end{itemize}
+The app has a number of pages for different tasks, but the three most important tasks that users need to achieve are:
+
+\begin{itemize}
+	\item Make a Tour
+	\item Select a Tour
+	\item Take a Tour
+	\item Make a Tour
+\end{itemize}
+
+We implement a tour as a set of geolocations (i.e. latitude and longitude), each associated with media (i.e. text, links, pictures, audio, video). The interface for making a tour consists of a screen which displays the tour so far - providing a map of the geolocations on the tour. Users can edit geolocations by selecting them on the map, or they can create a new one by clicking a button.
+
+The geolocation creation/edit screen automatically fills in the user’s current location (via GPS) and a default geolocation name. The screen also displays the associated media for the geolocation and buttons to add new media (each of which has its own screen) (TODO: FIGURE FOR CREATE/EDIT)
+
+Users should also be able to select a tour to take. The ``Select a Tour'' screen provides a list of the tours and a means for searching and filtering them. (TODO: FIGURE FOR SELECT TOUR)
+
+The ``Take a Tour'' screen allows users to take tours displays a map of the user’s current location and other locations on the tour. The bottom of the screen includes a set of boxes with thumbnails for the associated media. When the user taps a box, the media is displayed on the screen (TODO: FIGURE FOR TAKE A TOUR)
+
+There are other screens in ``Campus Sherpa'' - a home screen (from which we will launch other screens), a user profile screen, a settings screen, a help screen, etc. (TODO: SOME MISC FIGURE)
+
+\subsection{Technical Details}
+We use Parse for the backend. Parse is a backend-as-a-service which provides an SDK for iOS which allows users to persist objects on the server. This is much simpler than building a backend from scratch. For this project, we persist and retrieve latitude/longitude, text, pictures, and audio - which Parse supports. Since this application does not run in a browser, we do not have any browser dependencies (TODO: EXPAND THIS)
+    
 \section{Page Size and Columns}
 
 On each page your material (not including the page number) should fit

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Arch Linux) (format=pdflatex 2014.3.19)  23 APR 2014 16:54
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Arch Linux) (format=pdflatex 2014.3.19)  23 APR 2014 17:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -432,103 +432,116 @@ Non-PDF special ignored!
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 202.
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 232.
 
  (/usr/share/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 202.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 232.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 205.
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 205.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 235.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 235.
 
 
 (/usr/share/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
 LaTeX Font Info:    Font shape `OT1/pcr/bx/n' in size <8> not available
-(Font)              Font shape `OT1/pcr/b/n' tried instead on input line 205.
+(Font)              Font shape `OT1/pcr/b/n' tried instead on input line 235.
+ [2]
+
+LaTeX Warning: Citation `acm_categories' on page 3 undefined on input line 261.
 
 
-LaTeX Warning: Citation `acm_categories' on page 2 undefined on input line 231.
-
-
-<Figure1.png, id=115, 451.6875pt x 328.97906pt>
+<Figure1.png, id=132, 451.6875pt x 328.97906pt>
 File: Figure1.png Graphic file (type png)
  <use Figure1.png>
-Package pdftex.def Info: Figure1.png used on input line 265.
+Package pdftex.def Info: Figure1.png used on input line 295.
 (pdftex.def)             Requested size: 219.58264pt x 159.93114pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[2]
 
-LaTeX Warning: Citation `ethics' on page 3 undefined on input line 278.
+LaTeX Warning: Citation `ethics' on page 3 undefined on input line 308.
 
 
 LaTeX Warning: Citation `Klemmer:2002:WSC:503376.503378' on page 3 undefined on
- input line 278.
+ input line 308.
 
 
-LaTeX Warning: Citation `Mather:2000:MUT' on page 3 undefined on input line 278
+LaTeX Warning: Citation `Mather:2000:MUT' on page 3 undefined on input line 308
 .
 
 
 LaTeX Warning: Citation `Zellweger:2001:FAO:504216.504224' on page 3 undefined 
-on input line 278.
+on input line 308.
 
 
-LaTeX Warning: Reference `fig:figure2' on page 3 undefined on input line 340.
-
-
-LaTeX Warning: Citation `Schwartz:1995:GBF' on page 3 undefined on input line 3
-85.
+LaTeX Warning: Reference `fig:figure2' on page 3 undefined on input line 370.
 
 [3 <./Figure1.png>]
-Underfull \hbox (badness 1348) in paragraph at lines 406--408
+
+LaTeX Warning: Citation `Schwartz:1995:GBF' on page 4 undefined on input line 4
+15.
+
+
+Underfull \hbox (badness 1348) in paragraph at lines 436--438
 []\OT1/ptm/m/n/10 For more in-for-ma-tion and links to in-struc-tions and re-
  []
 
 
-Underfull \hbox (badness 1067) in paragraph at lines 406--408
+Underfull \hbox (badness 1067) in paragraph at lines 436--438
 \OT1/ptm/m/n/10 sources, please see: [][]$\OT1/pcr/b/n/8 http : / / chi2014 . a
 cm . org / authors /
  []
 
 
-LaTeX Warning: Citation `acrobat' on page 4 undefined on input line 426.
-
-No file FinalPaper.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 496.
-
-Package balance Warning: You have called \balance in second column
-(balance)                Columns might not be balanced.
+LaTeX Warning: Citation `acrobat' on page 4 undefined on input line 456.
 
 [4]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 496.
+No file FinalPaper.bbl.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 526.
+
+Overfull \vbox (1.83246pt too high) has occurred while \output is active []
+
+
+[5]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 526.
  (./FinalPaper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 496.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 496.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 526.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 526.
 Package rerunfilecheck Info: File `FinalPaper.out' has not changed.
-(rerunfilecheck)             Checksum: 1CA4677B2BF588CBA181D3C518CAC55E;1341.
+(rerunfilecheck)             Checksum: BC0C78068DF1F307BB63FE7836516716;1462.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 496.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 526.
  ) 
 Here is how much of TeX's memory you used:
- 6337 strings out of 493308
- 89331 string characters out of 6143616
- 182042 words of memory out of 5000000
- 9641 multiletter control sequences out of 15000+600000
+ 6343 strings out of 493308
+ 89395 string characters out of 6143616
+ 183042 words of memory out of 5000000
+ 9643 multiletter control sequences out of 15000+600000
  32208 words of font info for 73 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 41i,10n,28p,717b,392s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{section*.24} has been referenced but does not exi
+ 41i,10n,28p,717b,325s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{section*.26} has been referenced but does not exi
 st, replaced by a fixed one
+
+pdfTeX warning (dest): name{section*.25} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section*.24} has been referenced but does not exist
+, replaced by a fixed one
 
 pdfTeX warning (dest): name{section*.23} has been referenced but does not exist
 , replaced by a fixed one
@@ -548,16 +561,13 @@ pdfTeX warning (dest): name{section*.19} has been referenced but does not exist
 pdfTeX warning (dest): name{section*.18} has been referenced but does not exist
 , replaced by a fixed one
 
-pdfTeX warning (dest): name{section*.17} has been referenced but does not exist
+pdfTeX warning (dest): name{section*.15} has been referenced but does not exist
 , replaced by a fixed one
 
-pdfTeX warning (dest): name{section*.16} has been referenced but does not exist
-, replaced by a fixed one
+pdfTeX warning (dest): name{section*.8} has been referenced but does not exist,
+ replaced by a fixed one
 
-pdfTeX warning (dest): name{section*.13} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.6} has been referenced but does not exist,
+pdfTeX warning (dest): name{section*.7} has been referenced but does not exist,
  replaced by a fixed one
 
 pdfTeX warning (dest): name{section*.5} has been referenced but does not exist,
@@ -580,10 +590,10 @@ st/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/h
 elvetic/uhvro8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></u
 sr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fon
 ts/type1/urw/times/utmri8a.pfb>
-Output written on FinalPaper.pdf (4 pages, 541772 bytes).
+Output written on FinalPaper.pdf (5 pages, 544204 bytes).
 PDF statistics:
- 203 PDF objects out of 1000 (max. 8388607)
- 185 compressed objects within 2 object streams
- 54 named destinations out of 1000 (max. 500000)
- 190 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 217 PDF objects out of 1000 (max. 8388607)
+ 198 compressed objects within 2 object streams
+ 58 named destinations out of 1000 (max. 500000)
+ 206 words of extra memory for PDF output out of 10000 (max. 10000000)
 
