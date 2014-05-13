@@ -114,7 +114,7 @@ In this paper, we outline the development and motivation for Campus Sherpa, a mo
 
 Our domain of interest is tourism, more specifically, tourism at MIT. The MIT campus is filled with plenty of sights to see and plenty of people to visit them. The goal of this application is to pair people with the places they want to see.
 
-MIT receives a number of visitors each day from various demographics - prospective undergraduates/graduates, tourists visiting Boston/Cambridge, professionals or researchers attending a conference on campus, middle school students enrolled in Splash, etc. Many of these visitors will take a campus tour which will take them to the main sights at MIT (ex. the Student Center, gymnasium, auditorium, main hallway, and architecturally impressive computer science laboratory). However, this Òone-size-fits-allÓ nature of the tour fails to take into account the interests of each visitor and show them all the sights that they would enjoy seeing. Primary research questions include: ``How can we fix this with an easy to use mobile application?", ``Is a mobile application the right way to solve this problem?", and ``How can we take advantage of modern cell phone technologies to make the use of our application as easy as possible?"
+MIT receives a number of visitors each day from various demographics - prospective undergraduates/graduates, tourists visiting Boston/Cambridge, professionals or researchers attending a conference on campus, middle school students enrolled in Splash, etc. Many of these visitors will take a campus tour which will take them to the main sights at MIT (ex. the Student Center, gymnasium, auditorium, main hallway, and architecturally impressive computer science laboratory). However, this ï¿½one-size-fits-allï¿½ nature of the tour fails to take into account the interests of each visitor and show them all the sights that they would enjoy seeing. Primary research questions include: ``How can we fix this with an easy to use mobile application?", ``Is a mobile application the right way to solve this problem?", and ``How can we take advantage of modern cell phone technologies to make the use of our application as easy as possible?"
 
 The goal of this application is to allow users to pursue a tour (likely after the main campus tour) which will help them make the most of their time at MIT. For instance, a prospective graduate student in Biology would follow a tour of the biology labs while a tourist interested in history would be taken to the most historically important sites at MIT. 
 
@@ -124,7 +124,7 @@ The second aspect of this application is to allow users to chronicle their tours
 
 Thus, the primary audience will be people who aim to tour MIT and record their experience there. The secondary audience will be current MIT students who would like to chronicle their lives at MIT. While some MIT tours will be pre-installed, the majority should be user-created. 
 
-Based on our own experiences and the results of our interviews, people have varied tastes and desired destinations when visiting MIT, and we aim to make sure that their trip to MIT is as enjoyable and productive as possible. By creating an application to let users create, share, and follow custom tours of MIT, we hope to make college tours custom fit to each personÕs taste, to make memories of MIT easy to record and share, and to make a platform for sharing tours.
+Based on our own experiences and the results of our interviews, people have varied tastes and desired destinations when visiting MIT, and we aim to make sure that their trip to MIT is as enjoyable and productive as possible. By creating an application to let users create, share, and follow custom tours of MIT, we hope to make college tours custom fit to each personï¿½s taste, to make memories of MIT easy to record and share, and to make a platform for sharing tours.
 
 \section{Related Works}
 
@@ -209,23 +209,10 @@ By creating an application to let users create, share, and follow custom tours o
 	\item Take custom tours
 	\item Create tours based on experiences.
 \end{itemize}
-The app has a number of pages for different tasks, but the three most important tasks that users need to achieve are:
 
-\begin{itemize}
-	\item Make a Tour
-	\item Select a Tour
-	\item Take a Tour
-\end{itemize}
+When users launch the application, they are presented with a screen (Figure \ref{browser}) that lists all tours that have been created (by any user). If they would like to take a tour, they can select one from the list, and they will be directed to a "Start Tour" page (Figure \ref{start-tour}), which includes a map of all of the locations on the tour. If any of the location pins are clicked, the name of the corresponding location is shown.
 
-We implement a tour as a set of geolocations (i.e. latitude and longitude), each associated with media (i.e. text, links, pictures, audio, video). The interface for making a tour consists of a screen which displays the tour so far - providing a map of the geolocations on the tour. Users can edit geolocations by selecting them on the map, or they can create a new one by clicking a button.
-
-The geolocation creation/edit screen automatically fills in the userâ€™s current location (via GPS) and a default geolocation name. The screen also displays the associated media for the geolocation and buttons to add new media (each of which has its own screen) (TODO: FIGURE FOR CREATE/EDIT)
-
-Users should also be able to select a tour to take. The ``Select a Tour'' screen provides a list of the tours and a means for searching and filtering them. (TODO: FIGURE FOR SELECT TOUR)
-
-The ``Take a Tour'' screen allows users to take tours displays a map of the userâ€™s current location and other locations on the tour. The bottom of the screen includes a set of boxes with thumbnails for the associated media. When the user taps a box, the media is displayed on the screen (TODO: FIGURE FOR TAKE A TOUR)
-
-There are other screens in ``Campus Sherpa'' - a home screen (from which we will launch other screens), a user profile screen, a settings screen, a help screen, etc. (TODO: SOME MISC FIGURE)
+Once the user starts a tour, they are presented with a screen for the first location. The screen contains a picture of the location, two buttons for navigating to the previous location and the next location, another button that brings up a map with all of the locations (the same map from Figure \ref{start-tour}), and a final button that shows a list of media items associated with the current location (Figure \ref{take-tour-media}).
 
 \subsection{Technical Details}
 We use Parse for the backend. Parse is a backend-as-a-service which provides an SDK for iOS which allows users to persist objects on the server. This is much simpler than building a backend from scratch. For this project, we persist and retrieve latitude/longitude, text, pictures, and audio - which Parse supports. Since this application does not run in a browser, we do not have any browser dependencies (TODO: EXPAND THIS)
