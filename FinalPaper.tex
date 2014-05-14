@@ -217,14 +217,38 @@ We use Parse for the backend. Parse is a backend-as-a-service which provides an 
     
 \section{Field Study}
 
+<<<<<<< HEAD
 For our field study, we decided to combine quantitative and qualitative analysis of Campus Sherpa's user experience. For each user, we tracked which screens were viewed most often, which buttons were pressed most frequently, and for how much time a particular screen was viewed for. This gave us a sense of what our users were interacting with, or getting stuck on, from a quantitative perspective.
 
 We also kept a detailed log of how we observed our users interacting with Campus Sherpa. We observed and noted body language and facial expression and did our best to map both positive and negative interactions with our application to specific screens.
 
 Additionally, we surveyed users after they tried our application to get some of their feedback as well. User feedback, combined with qualitative observations, and quantitative data gave us a detailed look into how well Campus Sherpa worked for our users.
 
+=======
+Since our app is targeted at tourists of MIT, a demographic we did not have ready access to, we primarily focused on gathering information from two more available groups: iOS experts, who could critique the user experience of the app, and recent prefrosh (current MIT freshmen), who could asses the app's utility for prospective students. We had 4 students from each group take one tour (a brief tour of some locations in the Infinite Corridor) and make one tour, and we took notes on any difficulties they seemed to be experiencing while using the app. After they finished both tasks, we asked them for any feedback they had. We used a few standard questions:
+\begin{itemize}
+\item What additional features might it be useful for this app to have?
+\item Was any part of the user experience awkward or difficult?
+\item Do you see this app being useful in its current form to prospective tourists? What advantages would it have over tour guide-led tours?
+\end{itemize}
+We received a large volume of feedback. Some of the most common responses and insights follow:
+\begin{itemize}
+\item The "Show Map" screen (visible when taking a tour, looks much like Figure \ref{start-tour}) should have shown the pin for the current location in a different color.
+\item The keyboard on many screens was hard to dismiss -- the iOS experts suggested converting many of the views to ScrollViews so that users could scroll down to see elements obscured by a keyboard.
+\item If one location has a picture and the subsequent location does not (when taking a tour), the subsequent location's picture is set to the first location's picture, causing confusion.
+\item The workflow for the make tour portion of the app was a bit confusing -- the "Publish Tour" button appeared too early, so users sometimes clicked it before adding any locations to the tour.
+\item It would be nice if the app provided users directions to get one from one location to the next.
+\end{itemize}
+We modified the app to address the most common concerns of the testers. An interesting use case we discovered from running the field study is that many users actually like to step through tours in the app without actually moving physically from place to place. Thus, our app could prove incredibly useful to prospective students who are unable to visit the campus but want a sense for the rich variety of locations and sights at MIT. This use case could also help people plan what places they would like to visit during a trip to MIT. In essence, the app, if populated with a sufficient number of user-generated tours, could serve as a catalog of all of the interesting sets of related locations on campus.
+>>>>>>> Some work on the field study portion
 
-TODO: ADD RESULTS OF FIELD STUDY
+After they tested the app, the testers were asked to fill out a brief survey consisting of the following questions, with responses being ratings on a 1-to-5 scale:
+\begin{itemize}
+\item How useful do you think this app would have been for you during CPW?, with 1 being "Don't think tours would have played a big role in my decision, or tour guide-led tours would have been more than enough" and 5 being "Seeing different parts of campus would have been crucial to my decision, and this app would have helped me with that"
+\item As a current MIT student, could you see yourself using this app to explore different parts of campus when you had some free time?, with 1 being "Not at all" and 5 being "Definitely"
+\item Could you see this app being useful to tourists who want to get a better sense of MIT?, with 1 being "No, there are much better ways to do this" and 5 being "Yes, this app could offer much more information than tour guide-led tours or other options"
+\end{itemize}
+With the second question we explored yet another use case -- the physical tour for people who are already familiar with MIT in general but might want to explore a very niche part of campus. For example, there could be a tour with destinations popular for "hacking," which might include the roofs of various buildings and instructions on how to reach them. The results of this survey are plotted in Figure \ref{survey-results}.
 
 \section{Discussion}
 
