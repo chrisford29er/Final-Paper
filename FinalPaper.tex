@@ -200,9 +200,17 @@ By creating an application to let users create, share, and follow custom tours o
 	\item Create tours based on experiences.
 \end{itemize}
 
-When users launch the application, they are presented with a screen (Figure \ref{browser}) that lists all tours that have been created (by any user). If they would like to take a tour, they can select one from the list, and they will be directed to a "Start Tour" page (Figure \ref{start-tour}), which includes a map of all of the locations on the tour. If any of the location pins are clicked, the name of the corresponding location is shown.
+When users launch the application, they are presented with a screen (Figure \ref{fig:Figure2}a) that lists all tours that have been created (by any user). If they would like to take a tour, they can select one from the list, and they will be directed to a "Start Tour" page (Figure \ref{fig:Figure2}b), which includes a map of all of the locations on the tour. If any of the location pins are clicked, the name of the corresponding location is shown.
 
-Once the user starts a tour, they are presented with a screen for the first location. The screen contains a picture of the location, two buttons for navigating to the previous location and the next location, another button that brings up a map with all of the locations (the same map from Figure \ref{start-tour}), and a final button that shows a list of media items associated with the current location (Figure \ref{take-tour-media}).
+Once the user starts a tour, they are presented with a screen for the first location. The screen contains a picture of the location, two buttons for navigating to the previous location and the next location, another button that brings up a map with all of the locations (the same map from Figure \ref{fig:Figure2}b), and a final button that shows a list of media items associated with the current location (Figure \ref{fig:Figure2}c).
+
+\begin{figure}
+\centering
+\includegraphics[width=1.0\linewidth]{./Figure2}
+\caption{The screens of Campus Sherpa. (a) shows the tour browsing screen, where users can search for tours. (b) shows the tour preview screen, where users can preview the locations on the tour. (c) shows the location screen, where users can read about a locations and access associated media.}
+\label{fig:Figure2}
+\end{figure}
+
 
 \subsection{Technical Details}
 We use Parse for the backend. Parse is a backend-as-a-service which provides an SDK for iOS which allows users to persist objects on the server. This is much simpler than building a backend from scratch. For this project, we persist and retrieve latitude/longitude, text, pictures, and audio - which Parse supports. Since this application does not run in a browser, we do not have any browser dependencies (TODO: EXPAND THIS)
