@@ -286,11 +286,18 @@ After they tested the app, the testers were asked to fill out a brief survey con
 \end{itemize}
 With the second question we explored yet another use case -- the physical tour for people who are already familiar with MIT in general but might want to explore a very niche part of campus. For example, there could be a tour with destinations popular for "hacking," which might include the roofs of various buildings and instructions on how to reach them. The results of this survey are plotted in Figure \ref{survey-results}. The results seem to indicate that users are very optimistic about the utility of the app to tourists, but are more skeptical about its usefulness to prospective undergraduates. This is reasonable, as it sounded from personal conversations that the CPW experience is more about meeting other future students than exploring every nook and cranny of the campus. The strong response to our second question also indicates that the use case for people already familiar with MIT is legitimate.
 
+\begin{figure}
+\centering
+\includegraphics[width=1.0\linewidth]{./survey-responses.png}
+\caption{Average responses, on 1-to-5 scale, to our survey questions.}
+\label{survey-results}
+\end{figure}
+
 We also added quite a bit of logging to the code for our app. A summary of the logging output over all uses of the app by testers is shown in Tables \ref{logging-results-take} and \ref{logging-results-make}. There are many interesting conclusions we can derive from this data. Starting with Table \ref{logging-results-take}, we can see that the ``See Media" button (``Opened media list") was clicked on at least one location in fewer than half of the cases where a tour was taken (``Started taking a tour"). This tells us that the ``See Media" button should have been made more prominent.
 
-Looking at next at Table \ref{logging-results-make}, in many cases where a user started making a tour, he or she did not add any locations to the tour (``Adding location to tour"). This further corroborates the suggestions of testers that we make the ``Add Locations" button more visible on the initial make tour screen and make it more difficult to click the ``Publish Tour" button without adding any locations. 
+Looking at next at Table \ref{logging-results-make}, in many cases where a user started making a tour, he or she did not add any locations to the tour (``Adding location to tour", ``Finished adding location to tour"). This further corroborates the suggestions of testers that we make the ``Add Locations" button more visible on the initial make tour screen and make it more difficult to click the ``Publish Tour" button without adding any locations. Furthermore, it seems that testers used their current GPS location to specify the latitude / longitude coordinates of a new location more often than they explicitly entered a street address. This indicates that they often physically walked to the locations they wanted to add to their tours, which seems reasonable considering tours are meant to cover only locations on the MIT campus. In addition, only a third or fewer of the created tours included any images (``Finished adding image to tour"). We intend for all locations, and certainly all tours, to contain at least one image, so it seems that we should make the add image / media forms more central to the tour creation experience. Finally, there were many cancellations of created locations, which suggests that editing the state of a partially created location was so difficult that users decided to cancel the location altogether and start from scratch.
 
-\begin{center}
+\begin{table}
 \begin{tabular}{|l|l|}\hline
 \textbf{Log Message} & \textbf{Count} \\ \hline
  Started taking a tour & 267 \\ \hline
@@ -299,9 +306,11 @@ Looking at next at Table \ref{logging-results-make}, in many cases where a user 
  Going to next location & 377 \\ \hline
  Going to previous location & 594 \\ \hline
 \end{tabular}
-\end{center}
+\caption{Log message counts over all uses of the app for the take tour segment}
+\label{logging-results-take}
+\end{table}
 
-\begin{center}
+\begin{table}
 \begin{tabular}{|l|l|}\hline
 \textbf{Log Message} & \textbf{Count} \\ \hline
  Started making a tour & 114 \\ \hline
@@ -316,10 +325,11 @@ Looking at next at Table \ref{logging-results-make}, in many cases where a user 
  Cancelled out of add image view & 6 \\ \hline
  Finished adding location to tour & 42 \\ \hline
  Cancelled adding location to tour & 87 \\ \hline
- Finished creating tour & 28 \\ \hline
  Cancelled create tour & 49 \\ \hline
 \end{tabular}
-\end{center}
+\caption{Log message counts over all uses of the app for the make tour segment}
+\label{logging-results-make}
+\end{table}
 
 \section{Discussion}
 
