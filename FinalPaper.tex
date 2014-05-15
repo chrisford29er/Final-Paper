@@ -262,15 +262,6 @@ Once the user starts a tour, they are presented with a screen for the first loca
 We use Parse for the backend. Parse is a backend-as-a-service which provides an SDK for iOS which allows users to persist objects on the server. This is much simpler than building a backend from scratch. For this project, we persist and retrieve latitude/longitude, text, pictures, and audio - which Parse supports. Since this application does not run in a browser, we do not have any browser dependencies (TODO: EXPAND THIS)
     
 \section{Field Study}
-
-<<<<<<< HEAD
-For our field study, we decided to combine quantitative and qualitative analysis of Campus Sherpa's user experience. For each user, we tracked which screens were viewed most often, which buttons were pressed most frequently, and for how much time a particular screen was viewed for. This gave us a sense of what our users were interacting with, or getting stuck on, from a quantitative perspective.
-
-We also kept a detailed log of how we observed our users interacting with Campus Sherpa. We observed and noted body language and facial expression and did our best to map both positive and negative interactions with our application to specific screens.
-
-Additionally, we surveyed users after they tried our application to get some of their feedback as well. User feedback, combined with qualitative observations, and quantitative data gave us a detailed look into how well Campus Sherpa worked for our users.
-
-
 Since our app is targeted at tourists of MIT, a demographic we did not have ready access to, we primarily focused on gathering information from two more available groups: iOS experts, who could critique the user experience of the app, and recent prefrosh (current MIT freshmen), who could asses the app's utility for prospective students. We had 4 students from each group take one tour (a brief tour of some locations in the Infinite Corridor) and make one tour, and we took notes on any difficulties they seemed to be experiencing while using the app. After they finished both tasks, we asked them for any feedback they had. We used a few standard questions:
 \begin{itemize}
 \item What additional features might it be useful for this app to have?
@@ -286,7 +277,6 @@ We received a large volume of feedback. Some of the most common responses and in
 \item It would be nice if the app provided users directions to get one from one location to the next.
 \end{itemize}
 We modified the app to address the most common concerns of the testers. An interesting use case we discovered from running the field study is that many users actually like to step through tours in the app without actually moving physically from place to place. Thus, our app could prove incredibly useful to prospective students who are unable to visit the campus but want a sense for the rich variety of locations and sights at MIT. This use case could also help people plan what places they would like to visit during a trip to MIT. In essence, the app, if populated with a sufficient number of user-generated tours, could serve as a catalog of all of the interesting sets of related locations on campus.
->>>>>>> Some work on the field study portion
 
 After they tested the app, the testers were asked to fill out a brief survey consisting of the following questions, with responses being ratings on a 1-to-5 scale:
 \begin{itemize}
@@ -294,7 +284,42 @@ After they tested the app, the testers were asked to fill out a brief survey con
 \item As a current MIT student, could you see yourself using this app to explore different parts of campus when you had some free time?, with 1 being "Not at all" and 5 being "Definitely"
 \item Could you see this app being useful to tourists who want to get a better sense of MIT?, with 1 being "No, there are much better ways to do this" and 5 being "Yes, this app could offer much more information than tour guide-led tours or other options"
 \end{itemize}
-With the second question we explored yet another use case -- the physical tour for people who are already familiar with MIT in general but might want to explore a very niche part of campus. For example, there could be a tour with destinations popular for "hacking," which might include the roofs of various buildings and instructions on how to reach them. The results of this survey are plotted in Figure \ref{survey-results}.
+With the second question we explored yet another use case -- the physical tour for people who are already familiar with MIT in general but might want to explore a very niche part of campus. For example, there could be a tour with destinations popular for "hacking," which might include the roofs of various buildings and instructions on how to reach them. The results of this survey are plotted in Figure \ref{survey-results}. The results seem to indicate that users are very optimistic about the utility of the app to tourists, but are more skeptical about its usefulness to prospective undergraduates. This is reasonable, as it sounded from personal conversations that the CPW experience is more about meeting other future students than exploring every nook and cranny of the campus. The strong response to our second question also indicates that the use case for people already familiar with MIT is legitimate.
+
+We also added quite a bit of logging to the code for our app. A summary of the logging output over all uses of the app by testers is shown in Tables \ref{logging-results-take} and \ref{logging-results-make}. There are many interesting conclusions we can derive from this data. Starting with Table \ref{logging-results-take}, we can see that the ``See Media" button (``Opened media list") was clicked on at least one location in fewer than half of the cases where a tour was taken (``Started taking a tour"). This tells us that the ``See Media" button should have been made more prominent.
+
+Looking at next at Table \ref{logging-results-make}, in many cases where a user started making a tour, he or she did not add any locations to the tour (``Adding location to tour"). This further corroborates the suggestions of testers that we make the ``Add Locations" button more visible on the initial make tour screen and make it more difficult to click the ``Publish Tour" button without adding any locations. 
+
+\begin{center}
+\begin{tabular}{|l|l|}\hline
+\textbf{Log Message} & \textbf{Count} \\ \hline
+ Started taking a tour & 267 \\ \hline
+ Opened media list & 116 \\ \hline
+ Clicked on media item & 157 \\ \hline
+ Going to next location & 377 \\ \hline
+ Going to previous location & 594 \\ \hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{|l|l|}\hline
+\textbf{Log Message} & \textbf{Count} \\ \hline
+ Started making a tour & 114 \\ \hline
+ Adding location to tour & 77 \\ \hline
+ Entered address for new location & 12 \\ \hline
+ Used current GPS location for new location & 38 \\ \hline
+ Opened add media view for new location & 69 \\ \hline
+ Taking new picture to add to tour & 17 \\ \hline
+ Choosing image from library to add to tour & 13 \\ \hline
+ Cancelled library image picker & 5 \\ \hline
+ Finished adding image to tour & 37 \\ \hline
+ Cancelled out of add image view & 6 \\ \hline
+ Finished adding location to tour & 42 \\ \hline
+ Cancelled adding location to tour & 87 \\ \hline
+ Finished creating tour & 28 \\ \hline
+ Cancelled create tour & 49 \\ \hline
+\end{tabular}
+\end{center}
 
 \section{Discussion}
 
