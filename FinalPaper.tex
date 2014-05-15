@@ -337,9 +337,23 @@ TODO: Add Discussion
 
 \subsection{Future Work}
 
-The next major milestone for Campus Sherpa is to create a recommendation system which suggests tours (or perhaps combine existing tours) that cater to a user's unique interests. This was omitted from this version of Campus Sherpa because 1) There weren't enough tours such that a recommendation system would be useful, and 2) The algorithmic and machine learning challenges of building a recommendation system were outside the scope of the class. Other improvements to the app include video support, tour ratings, and user profiles.
+As can be seen from the field study, although a number of the key objectives of Campus Sherpa were met, a number of improvements are possible. 
 
-\subsection{Acknowledgements}
+From a technical standpoint, the user interface could be improved to make it look more professional. Although our UI has the advantage of being simplistic, with the addition of more features such as video, the UI might need to be reworked (HARIHAR: POSSIBLE TO TOSS IN SOME UI JARGON, MAKE THIS BETTER SOUNDING AND EXPANDED?). Another technical improvement is the creation of our own backend for the app. For the purposes of the field study and initial deployment, we chose to use the Parse framework. Parse greatly accelerates the rate at which one can get an initial app deployed and running, and eliminates the need for managing the backend with its associated servers and databases ourselves. Moreover, Parse provides excellent data visualization and logging tools that greatly simplified the initial deployment of the app and the collection of data from the field study. However, as Campus Sherpa reaches more users, we believe it would be beneficial to switch to writing our own backend because of Parse's pricing and for the advantages of relying on our own infrastructure. Yet another advantage of using our own backend is that it makes the performance characteristics and bottlenecks of the app transparent to us. We did not receive any negative feedback regarding performance from our field study, but we do anticipate running into performance issues as the app reaches more users. 
+
+A relatively simple change that should help in making Campus Sherpa reach more users and improve their experience with it is the addition of video to tour media, since at the moment Campus Sherpa supports only text and audio. Video is a key element in most of the related tourism apps that we examined in the related work section, and the results of our field study as well as feedback from others suggested that we should include it. Another related feature that could be of great benefit to the visually impaired is the addition of text to speech capabilities to the application. 
+
+The next major milestone for Campus Sherpa is to create a recommendation system which suggests tours (or perhaps combine existing tours) that cater to a user's unique interests. This was omitted from this version of Campus Sherpa because 1) There weren't enough tours such that a recommendation system would be useful, and 2) The algorithmic and machine learning challenges of building a recommendation system were outside the scope of the class. Moreover, we felt that they were too complex for a proof of concept application. 
+
+In similar spirit to the recommendation system is the integration of popular social applications such as Twitter and Facebook. This will enable users and tour creators to utilize the existing vast reach of networks such as Facebook to advertise a newly created tour. The success of Campus Sherpa is closely tied to the spread of awareness about it, because with very few users, not many tours get published and with a lack of good tours, the purpose of Campus Sherpa is defeated. We believe that social networks can play a critical role in making a large number of people aware of the app and its capabilities. 
+
+Another possible improvement suggested by our TA is making the user's location a more integral part of the app. Right now, the app can be run in ``armchair tourism'' mode, where a user simply sits somewhere and browses through all available tours. This is positive in some respects, since it allows users to view the available tours prior to experiencing them firsthand on campus. However, this comes at the cost of a loss in immersion. One way to address this is the creation of a new mode where users can take a tour ``realistically''. For instance, only tour locations near the user's current geographic location can highlighted, and the rest are grayed out. 
+
+\subsection{Conclusion}
+
+TODO: ADD CONCLUSION
+
+\section{Acknowledgments}
 
 We would like to thank our TA Jason Martin Lipshin for guidance as well as constructive feedback. 
 
@@ -349,12 +363,6 @@ Additionally, we would like to thank the various participants in our field study
 
 Last but not least, we would like to thank Ed Barrett and Frank Bentley for providing us with the opportunity to pursue this project. They gave us great insight into how to develop an
 application communicating with mobile technology and gave us the technical background to actually develop an iOS application with network and location services in use. 
-
-\subsection{Conclusion}
-
-TODO: ADD CONCLUSION
-
-\section{Acknowledgments}
 
 % Balancing columns in a ref list is a bit of a pain because you
 % either use a hack like flushend or balance, or manually insert
