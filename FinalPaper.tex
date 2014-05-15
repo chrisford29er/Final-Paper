@@ -233,33 +233,80 @@ By creating an application to let users create, share, and follow custom tours o
 	\item Create tours based on experiences.
 \end{itemize}
 
-When users launch the application, they are presented with a screen (Figure \ref{fig:Figure2}a) that lists all tours that have been created (by any user). If they would like to take a tour, they can select one from the list, and they will be directed to a "Start Tour" page (Figure \ref{fig:Figure2}b), which includes a map of all of the locations on the tour. If any of the location pins are clicked, the name of the corresponding location is shown.
-
-Once the user starts a tour, they are presented with a screen for the first location. The screen contains a picture of the location, two buttons for navigating to the previous location and the next location, another button that brings up a map with all of the locations (the same map from Figure \ref{fig:Figure2}b), and a final button that shows a list of media items associated with the current location (Figure \ref{fig:Figure2}c).
+When users launch the application, they are presented with a screen (Figure \ref{fig:TourBrowser}) that lists all tours that have been created (by any user). If they would like to take a tour, they can select one from the list, and they will be directed to a "Start Tour" page (Figure \ref{fig:TourPreview}), which includes a map of all of the locations on the tour. If any of the location pins are clicked, the name of the corresponding location is shown.
 
 \begin{figure}
 \centering
-\includegraphics[width=1.0\linewidth]{./TourBrowser}
+\includegraphics[width=0.7\linewidth]{./TourBrowser}
 \caption{The tour browsing screen.}
 \label{fig:TourBrowser}
 \end{figure}
 
+
 \begin{figure}
 \centering
-\includegraphics[width=1.0\linewidth]{./TourPreview}
+\includegraphics[width=0.7\linewidth]{./TourPreview}
 \caption{The tour preview screen.}
 \label{fig:TourPreview}
 \end{figure}
 
+Once the user starts a tour, they are presented with a screen for the first location. The screen contains a picture of the location, two buttons for navigating to the previous location and the next location, another button that brings up a map with all of the locations (the same map from Figure \ref{fig:TourPreview}), and a final button for the related media (Figure \ref{fig:LocationScreen}). The ``Show Map'' button has been included based on the field study - users indicated that they wanted to have access to the map of locations at all times.
+
+
 \begin{figure}
 \centering
-\includegraphics[width=1.0\linewidth]{./LocationScreen}
+\includegraphics[width=0.7\linewidth]{./LocationScreen}
 \caption{The location screen.}
 \label{fig:LocationScreen}
 \end{figure}
 
+If the user clicks ``See Media'', then a list of media is displayed (Figure \ref{fig:MediaList}). The media includes images (such as pictures of the location) with descriptions. It also includes audio narration that can describe the locations. Based on user testing, we found that users wanted some form of audio in the tour. We experimented with text-to-speech and found that it sounded robotic and often mispronounced words. So, we decided to support audio narration instead, so that users can record descriptions of the location, which would be more natural than text-to-speech. The screen for listening to audio is displayed in Figure \ref{fig:AudioRecord} (the screen for recording audio is similar).
+
+\begin{figure}
+\centering
+\includegraphics[width=0.7\linewidth]{./MediaList}
+\caption{The media list for a given location. It can contain images and audio narration.}
+\label{fig:MediaList}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.7\linewidth]{./AudioRecord}
+\caption{Users can record audio for tours.}
+\label{fig:AudioRecord}
+\end{figure}
+
+The second part of Campus Sherpa is the tour creation aspect. Initially, tour creation was done in just two screens, but field testing showed that users were confused by the large number of UI elements on one screen. So, the app was update and tour creation was broken into multiple screens. For instance, Figure \ref{fig:TourName}, asks the user to enter the tour name.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.7\linewidth]{./TourName}
+\caption{Tour creation is broken into simple screens}
+\label{fig:TourName}
+\end{figure}
+
+Then, the user enters the location. To simplify location entry, we either utilize the GPS to locate the user's location (i.e. ``Use Current Location'') or we allow the user to enter the address (i.e. ``Use Above Address''). The address is converted to a latitude/longitude pair using the Google Maps API. The location entry screen is shown in  Figure \ref{fig:EnterLocation}. By modifying the tour creation mechanism as described, users were able to create tours with less difficulty and were easily able to navigate through the app.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.7\linewidth]{./EnterLocation}
+\caption{Location entry via address or GPS} 
+\label{fig:EnterLocation}
+\end{figure}
+
 \subsection{Technical Details}
-We use Parse for the backend. Parse is a backend-as-a-service which provides an SDK for iOS which allows users to persist objects on the server. This is much simpler than building a backend from scratch. For this project, we persist and retrieve latitude/longitude, text, pictures, and audio - which Parse supports. Since this application does not run in a browser, we do not have any browser dependencies (TODO: EXPAND THIS)
+We use Parse for the backend. Parse is a backend-as-a-service which provides an SDK for iOS which allows users to persist objects in tables on the server. We chose Parse because it provided all the backend infrastructure we needed and it allowed us to focus on the interface and usability of the app. On Parse, we persist four kinds of objects. 
+
+\begin{itemize}
+\item \textbf{Tour}, which consists of a name, description, thumbnail, and list of locations
+\item \textbf{TourLocation}, which consists of a latitude/longitude pair, name, description, thumbnail, and list of media
+\item \textbf{TourMedia}, which consists of a name, description, image, and audio. 
+\item \textbf{Log}, which consists of a User ID, message, and time
+\end{itemize}
+
+We utilized Parse Analytics and Parse queries to analyze usage statistics and log messages. 
+
+The application is implemented for iOS 7 using the Objective-C programming language. The application is designed using native UI controls (paper prototyping showed that users were not able to recognize custom controls). The layout and navigation were designed in according to the Apple Human Interface Guidelines.
     
 \section{Field Study}
 Since our app is targeted at tourists of MIT, a demographic we did not have ready access to, we primarily focused on gathering information from two more available groups: iOS experts, who could critique the user experience of the app, and recent prefrosh (current MIT freshmen), who could asses the app's utility for prospective students. We had 4 students from each group take one tour (a brief tour of some locations in the Infinite Corridor) and make one tour, and we took notes on any difficulties they seemed to be experiencing while using the app. After they finished both tasks, we asked them for any feedback they had. We used a few standard questions:
@@ -339,7 +386,7 @@ TODO: Add Discussion
 
 As can be seen from the field study, although a number of the key objectives of Campus Sherpa were met, a number of improvements are possible. 
 
-From a technical standpoint, the user interface could be improved to make it look more professional. Although our UI has the advantage of being simplistic, with the addition of more features such as video, the UI might need to be reworked (HARIHAR: POSSIBLE TO TOSS IN SOME UI JARGON, MAKE THIS BETTER SOUNDING AND EXPANDED?). Another technical improvement is the creation of our own backend for the app. For the purposes of the field study and initial deployment, we chose to use the Parse framework. Parse greatly accelerates the rate at which one can get an initial app deployed and running, and eliminates the need for managing the backend with its associated servers and databases ourselves. Moreover, Parse provides excellent data visualization and logging tools that greatly simplified the initial deployment of the app and the collection of data from the field study. However, as Campus Sherpa reaches more users, we believe it would be beneficial to switch to writing our own backend because of Parse's pricing and for the advantages of relying on our own infrastructure. Yet another advantage of using our own backend is that it makes the performance characteristics and bottlenecks of the app transparent to us. We did not receive any negative feedback regarding performance from our field study, but we do anticipate running into performance issues as the app reaches more users. 
+From a technical standpoint, the user interface could be improved to make it look more professional. Although our UI has the advantage of being simplistic, with the addition of more features such as video, the UI might need to be reworked. For instance, to increase interface safety, a mechanism for managing tour creation (ex. save, undo, redo) could be implemented. Another technical improvement is the creation of our own backend for the app. For the purposes of the field study and initial deployment, we chose to use the Parse framework. Parse greatly accelerates the rate at which one can get an initial app deployed and running, and eliminates the need for managing the backend with its associated servers and databases ourselves. Moreover, Parse provides excellent data visualization and logging tools that greatly simplified the initial deployment of the app and the collection of data from the field study. However, as Campus Sherpa reaches more users, we believe it would be beneficial to switch to writing our own backend because of Parse's pricing and for the advantages of relying on our own infrastructure. Yet another advantage of using our own backend is that it makes the performance characteristics and bottlenecks of the app transparent to us. We did not receive any negative feedback regarding performance from our field study, but we do anticipate running into performance issues as the app reaches more users. 
 
 A relatively simple change that should help in making Campus Sherpa reach more users and improve their experience with it is the addition of video to tour media, since at the moment Campus Sherpa supports only text and audio. Video is a key element in most of the related tourism apps that we examined in the related work section, and the results of our field study as well as feedback from others suggested that we should include it. Another related feature that could be of great benefit to the visually impaired is the addition of text to speech capabilities to the application. 
 
