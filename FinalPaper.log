@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Arch Linux) (format=pdflatex 2014.3.19)  15 MAY 2014 21:34
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Arch Linux) (format=pdflatex 2014.3.19)  15 MAY 2014 22:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -407,7 +407,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 1742) in paragraph at lines 113--115
+Underfull \hbox (badness 1742) in paragraph at lines 113--114
 \OT1/ptm/m/n/10 prospec-tive un-der-grads, prospec-tive grad stu-dents, mid-
  []
 
@@ -422,7 +422,7 @@ File: ./CanadianMuseumOfCivilization.jpg Graphic file (type jpg)
 
 <use ./CanadianMuseumOfCivilization.jpg>
 Package pdftex.def Info: ./CanadianMuseumOfCivilization.jpg used on input line 
-138.
+137.
 (pdftex.def)             Requested size: 243.98238pt x 243.98343pt.
 
 
@@ -431,108 +431,101 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <./FreedomTrail.jpg, id=62, 481.8pt x 803.0pt>
 File: ./FreedomTrail.jpg Graphic file (type jpg)
  <use ./FreedomTrail.jpg>
-Package pdftex.def Info: ./FreedomTrail.jpg used on input line 149.
+Package pdftex.def Info: ./FreedomTrail.jpg used on input line 150.
 (pdftex.def)             Requested size: 243.98238pt x 406.63293pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./GeoTour.jpg, id=64, 321.2pt x 481.8pt>
+<./GeoTour.jpg, id=67, 321.2pt x 481.8pt>
 File: ./GeoTour.jpg Graphic file (type jpg)
  <use ./GeoTour.jpg>
-Package pdftex.def Info: ./GeoTour.jpg used on input line 165.
+Package pdftex.def Info: ./GeoTour.jpg used on input line 166.
 (pdftex.def)             Requested size: 243.98238pt x 365.98065pt.
 
-Underfull \vbox (badness 1874) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2 <./CanadianMuseumOfCivilization.jpg>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 174.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 175.
 [3 <./FreedomTrail.jpg> <./GeoTour.jpg>]
-<./TourBrowser.png, id=85, 642.4pt x 1140.26pt>
+<./TourBrowser.png, id=91, 642.4pt x 1140.26pt>
 File: ./TourBrowser.png Graphic file (type png)
  <use ./TourBrowser.png>
-Package pdftex.def Info: ./TourBrowser.png used on input line 247.
+Package pdftex.def Info: ./TourBrowser.png used on input line 248.
 (pdftex.def)             Requested size: 170.78691pt x 303.1418pt.
 
-<./TourPreview.png, id=86, 642.4pt x 1140.26pt>
+<./TourPreview.png, id=92, 642.4pt x 1140.26pt>
 File: ./TourPreview.png Graphic file (type png)
  <use ./TourPreview.png>
-Package pdftex.def Info: ./TourPreview.png used on input line 255.
+Package pdftex.def Info: ./TourPreview.png used on input line 256.
 (pdftex.def)             Requested size: 170.78691pt x 303.1418pt.
 
-<./LocationScreen.png, id=89, 642.4pt x 1140.26pt>
+<./LocationScreen.png, id=95, 642.4pt x 1140.26pt>
 File: ./LocationScreen.png Graphic file (type png)
  <use ./LocationScreen.png>
-Package pdftex.def Info: ./LocationScreen.png used on input line 265.
+Package pdftex.def Info: ./LocationScreen.png used on input line 266.
 (pdftex.def)             Requested size: 170.78691pt x 303.1418pt.
 
-[4 <./TourBrowser.png>] <./MediaList.png, id=100, 642.4pt x 1140.26pt>
+[4 <./TourBrowser.png>] <./MediaList.png, id=106, 642.4pt x 1140.26pt>
 File: ./MediaList.png Graphic file (type png)
 
 <use ./MediaList.png>
-Package pdftex.def Info: ./MediaList.png used on input line 274.
+Package pdftex.def Info: ./MediaList.png used on input line 275.
 (pdftex.def)             Requested size: 170.78691pt x 303.1418pt.
- <./AudioRecord.PNG, id=101, 642.4pt x 1140.26pt>
+ <./AudioRecord.PNG, id=107, 642.4pt x 1140.26pt>
 File: ./AudioRecord.PNG Graphic file (type png)
 
 <use ./AudioRecord.PNG>
-Package pdftex.def Info: ./AudioRecord.PNG used on input line 281.
+Package pdftex.def Info: ./AudioRecord.PNG used on input line 282.
 (pdftex.def)             Requested size: 170.78691pt x 303.1418pt.
- <./TourName.PNG, id=103, 642.4pt x 1140.26pt>
+ <./TourName.PNG, id=109, 642.4pt x 1140.26pt>
 File: ./TourName.PNG Graphic file (type png)
 
 <use ./TourName.PNG>
-Package pdftex.def Info: ./TourName.PNG used on input line 290.
+Package pdftex.def Info: ./TourName.PNG used on input line 291.
 (pdftex.def)             Requested size: 170.78691pt x 303.1418pt.
- <./EnterLocation.PNG, id=105, 642.4pt x 1140.26pt>
+ <./EnterLocation.PNG, id=111, 642.4pt x 1140.26pt>
 File: ./EnterLocation.PNG Graphic file (type png)
 
 <use ./EnterLocation.PNG>
-Package pdftex.def Info: ./EnterLocation.PNG used on input line 299.
+Package pdftex.def Info: ./EnterLocation.PNG used on input line 300.
 (pdftex.def)             Requested size: 170.78691pt x 303.1418pt.
 
 Underfull \vbox (badness 1715) has occurred while \output is active []
 
  [5 <./TourPreview.png> <./LocationScreen.png> <./MediaList.png>] [6 <./AudioRe
 cord.PNG> <./TourName.PNG> <./EnterLocation.PNG>]
-
-LaTeX Warning: Reference `start-tour' on page 7 undefined on input line 327.
-
-<./survey-responses.png, id=120, 350.30875pt x 544.0325pt>
+<./survey-responses.png, id=127, 350.30875pt x 544.0325pt>
 File: ./survey-responses.png Graphic file (type png)
 
 <use ./survey-responses.png>
-Package pdftex.def Info: ./survey-responses.png used on input line 345.
+Package pdftex.def Info: ./survey-responses.png used on input line 346.
 (pdftex.def)             Requested size: 243.98238pt x 378.91086pt.
  [7] [8 <./survey-responses.png>] (./FinalPaper.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 454.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 455.
 
 
 Package balance Warning: You have called \balance in second column
 (balance)                Columns might not be balanced.
 
 [9]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 454.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 455.
  (./FinalPaper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 454.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 454.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 455.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 455.
 Package rerunfilecheck Info: File `FinalPaper.out' has not changed.
 (rerunfilecheck)             Checksum: 9E3F588EBDED9137A84929DDCD69DCD3;549.
-
-
-LaTeX Warning: There were undefined references.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 454.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 455.
  ) 
 Here is how much of TeX's memory you used:
- 6311 strings out of 493308
- 89629 string characters out of 6143616
+ 6310 strings out of 493308
+ 89617 string characters out of 6143616
  183858 words of memory out of 5000000
- 9618 multiletter control sequences out of 15000+600000
+ 9617 multiletter control sequences out of 15000+600000
  25571 words of font info for 53 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  41i,10n,30p,1450b,375s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -571,10 +564,10 @@ pdfTeX warning (dest): name{section*.3} has been referenced but does not exist,
 vetic/uhvb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/
 share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/
 type1/urw/times/utmri8a.pfb>
-Output written on FinalPaper.pdf (9 pages, 1714433 bytes).
+Output written on FinalPaper.pdf (9 pages, 1714219 bytes).
 PDF statistics:
- 183 PDF objects out of 1000 (max. 8388607)
- 153 compressed objects within 2 object streams
+ 187 PDF objects out of 1000 (max. 8388607)
+ 157 compressed objects within 2 object streams
  53 named destinations out of 1000 (max. 500000)
  149 words of extra memory for PDF output out of 10000 (max. 10000000)
 

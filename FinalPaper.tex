@@ -110,10 +110,9 @@ Every day, MIT receives a large number of visitors from different backgrounds.
 \label{fig:Tourists}
 \end{figure}
 
-The visitors include tourists exploring Boston/Cambridge, prospective undergrads, prospective grad students, middle/high schoolers attending Splash, researchers attending a conference, and professionals attending an event or career fair. Each visitor has different interests when visiting MIT. For instance, an incoming freshman may be focused on exploring the undergraduate residences while a prospective biology graduate student may be more interested in the biological research labs. However, many of these visitors will take a campus tour which will take them to the main sights at MIT (ex. the Student Center, gymnasium, auditorium, main hallway, and architecturally impressive computer science laboratory).
-However, this ``one-size-fits-all'' nature of the tour fails to take into account the interests of each visitor and show them all the sights that they would enjoy seeing. 
+The visitors include tourists exploring Boston/Cambridge, prospective undergrads, prospective grad students, middle/high schoolers attending Splash, researchers attending a conference, and professionals attending an event or career fair. Each visitor has different interests when visiting MIT. For instance, an incoming freshman may be focused on exploring the undergraduate residences while a prospective biology graduate student may be more interested in the biological research labs. However, many of these visitors take campus tours which take them to the main sights at MIT (e.g. the Student Center, gymnasium, auditorium, main hallway, and architecturally impressive computer science laboratory). However, this ``one-size-fits-all'' nature of the tour fails to take into account the interests of each visitor and show them all the sights that they would enjoy seeing. 
 
-Campus Sherpa is a tourism app focused on MIT. Users can create tours, which are sequences of locations associated with media (ex. pictures, audio narration). Users can take tours, which takes them on a guided trip to interesting sites on the MIT campus and shows them relevant media for each site.
+Campus Sherpa is a tourism app focused on MIT. Users can create tours, which are sequences of locations associated with media (e.g. pictures, audio narration). Users can take tours, which takes them on a guided trip to interesting sites on the MIT campus and shows them relevant media for each site.
 
 Primary research questions include: ``How can we fix this with an easy to use mobile application?", ``Is a mobile application the right way to solve this problem?", and ``How can we take advantage of modern cell phone technologies to make use of our application as easy as possible?"
 
@@ -121,9 +120,9 @@ One goal of this application is to allow users to pursue a tour (likely after th
 
 The second aspect of this application is to allow users to chronicle their tours and share them with others. As prospective students compare MIT to other schools or as tourists reminisce about their visit to MIT, the ability to record their tours (by associating locations with text, photos, videos, and links to related content) will aid them in remembering. For current students, this offers a way to record the precious memories they make at MIT and share them with others.
 
-Since smartphones offer location awareness and mobility, they are the obvious platform choice for this application. By deploying this application for iOS, users can take out their smartphone when they arrive at MIT, select a tour based on their interest, and then begin exploring sites that will be most useful to them. Also, they can create a tour so that they can revisit their memories later on. 
+Since smartphones offer location awareness and mobility, they are the obvious platform choice for this application. By deploying this application for iOS, users can take out their smartphone when they arrive at MIT, select a tour based on their interests, and then begin exploring sites that will be most useful to them. Also, they can create a tour so that they can revisit their memories later on. 
 
-Thus, the primary audience will be people who aim to tour MIT and record their experience there. The secondary audience will be current MIT students who would like to chronicle their lives at MIT. While some MIT tours will be pre-installed, the majority would be user-created. 
+Thus, the primary audience will be people who aim to tour MIT and record their experience there. The secondary audience will be current MIT students who would like to chronicle their lives at MIT. While some MIT tours will be pre-installed, the majority are intended to be user-created. 
 
 Based on our own experiences and the results of our interviews, people have varied tastes and desired destinations when visiting MIT. We therefore aimed to make sure that their trip to MIT is as enjoyable and productive as possible. By creating an application to let users create, share, and follow custom tours of MIT, we hoped to make college tours custom fit to each person's taste, to make memories of MIT easy to record and share, and to make a platform for sharing tours.
 
@@ -140,9 +139,11 @@ There exist a few mobile applications that try to enrich tourism as well. Applic
 \label{fig:CanadianMuseumOfCivilization}
 \end{figure}
 
-Although these virtual tours allow more users to "explore" a tourist destination, they fail to replicate the experience of touring in person. A 3.5" to 5" screen is not a good way to replicate a tour.
+Although these virtual tours allow more users to ``explore'' a tourist destination, they fail to replicate the experience of touring in person. A 3.5 inches to 5 inches screen is not a good way to replicate a tour.
 
-Applications that try to supplement existing tours include: the Boston Freedom Tail, Walking Cinema: Murder on Beacon Hill, and LAT Star Walk mobile applications. These applications do take in the users position so they can serve them content when they reach specific locations, but they lack the ability to create and share custom tours made by other users. With these applications, users are limited to the content made by the developers. While these applications usually only provide users with information specific to one tour, Campus Sherpa allows users to browse and take many tours of MIT, as created by other users.
+% changed 5" to 5 inches to follow style guidelines (http://tex.stackexchange.com/questions/46055/typesetting-with-inch-symbols-and-sizes-in-inches)
+
+Mobile applications that try to supplement existing tours include: the Boston Freedom Tail, Walking Cinema: Murder on Beacon Hill, and LAT Star Walk. These applications do utilize the user's position so that they can serve them content when they reach specific locations, but they lack the ability to create and share custom tours made by other users. With these applications, users are limited to the content made by the developers. While these applications usually only provide users with information specific to one tour, Campus Sherpa allows users to browse and take many tours of MIT, as created by other users.
 
 \begin{figure}[h]
 \centering
@@ -153,11 +154,11 @@ Applications that try to supplement existing tours include: the Boston Freedom T
 
 We also looked at the mobile applications Geotour, YouVisit, TourBuddy, and MyTours. Like the applications mentioned above, these applications failed to successfully complement the tour taking experience; however, we did take note of a few features from each application that we enjoyed and wanted to implement in Campus Sherpa. We enjoyed: Geotour's location triggered changes, YouVisit's audio narration feature, TourBuddy's tour builder, and MyTours' tour browser. Figure~\ref{fig:GeoTour} illustrates the map feature of GeoTour that we really liked.
 
-There also exists related academic work. A paper published by Zarmpou, Drosopoulou and Vlachopoulou titled \emph{Mapping the tourism mobile applications: what, how and where} examines fourteen mobile tourism applications and discusses their successes and downfalls, placing particular emphasis on the success and failures of their respective business models. 
+There also exists related academic work. A paper published by Zarmpou, Drosopoulou and Vlachopoulou titled \emph{Mapping the tourism mobile applications: what, how and where} \cite{Zarmpou:2013:MTM:2490257.2490295} examines fourteen mobile tourism applications and discusses their successes and downfalls, placing particular emphasis on the success and failures of their respective business models. 
 
-\emph{Collective intelligence in toursplan: an online tourism social network with planning and recommendation services} published in 2013 by Luz, Almeida, Anacleto, and Silva in the Proceedings of the International C* Conference on Computer Science and Software Engineering examines the development of Toursplan, an information system backed by an online social network that provides tourists information about the areas they plan on touring. Toursplan analyzes social data to generate recommendations to their users as to locations to visit and tours to take. Although serving a different need of tourists, we took special note of how Toursplan took into account social data when making it's recommendations. 
+\emph{Collective intelligence in toursplan: an online tourism social network with planning and recommendation services} published by Luz, Almeida, Anacleto, and Silva \cite{Luz:2013:CIT:2494444.2494449} examines the development of Toursplan, an information system backed by an online social network that provides tourists information about the areas they plan on touring. Toursplan analyzes social data to generate recommendations to their users as to which locations to visit and which tours to take. Although serving a different need of tourists, we took special note of how Toursplan took into account social data when making it's recommendations. 
 
-\emph{Cyberguide: A mobile context-aware tour guide} published by Abowd, Atkeson, Hong, Long, Kooper, and Pinkerton in 1997 discusses the development of Cyberguide, which, as the title of the paper suggests, was an early stab at providing tourists with a mobile, digital tour guide. Again, although Cyberguide aimed to solve a different tourism related problem than our application, we took note of their very well documented design and prototyping steps that led to their successful testing of Cyberguide.
+\emph{Cyberguide: A mobile context-aware tour guide} published by Abowd, Atkeson, Hong, Long, Kooper, and Pinkerton \cite{Abowd:1997:CMC:272186.272199} discusses the development of Cyberguide, which, as the title of the paper suggests, was an early stab at providing tourists with a mobile, digital tour guide. Again, although Cyberguide aimed to solve a different tourism related problem than our application, we took note of their very well documented design and prototyping steps that led to their successful testing of Cyberguide.
 
 
 \begin{figure}[h!]
@@ -169,7 +170,7 @@ There also exists related academic work. A paper published by Zarmpou, Drosopoul
 
 \section{Background}
 
-Motivated by the above observation, we first identified the types of people touring MIT. We decided that for the purposes of campus tours, we can broadly classify people as current students, prospective freshmen, parents, and tourists. In order to gather information about these groups, we conducted a survey of these four groups, with some questions common to all four groups and some tailored to a specific group. We reached out to tour groups, classmates/colleagues, and friends/family. Each participant was interviewed for approximately 15 to 20 minutes. Here are some of the questions we asked:
+Motivated by the above observations, we first identified the types of people touring MIT. We decided that for the purposes of campus tours, we can broadly classify people as current students, prospective freshmen, parents, and tourists. In order to gather information about these groups, we conducted a survey of these four groups, with some questions common to all four groups and some tailored to a specific group. We reached out to tour groups, classmates/colleagues, and friends/family. Each participant was interviewed for approximately 15 to 20 minutes. Here are some of the questions we asked:
 
 \textbf{Everyone}:
 
@@ -208,7 +209,7 @@ Motivated by the above observation, we first identified the types of people tour
 	\item In a sentence, why did you want to come visit MIT?
 \end{itemize}
 
-Approximately twenty people responded to the survey, evenly distributed across the four demographics. Some of the responses to the survey are:
+Approximately twenty people responded to the survey, evenly distributed across the four demographics. Some of the responses to the survey were:
 
 ``There are always too many things to see \ldots I am wishing I can see more later'' (current student)
 
@@ -226,8 +227,8 @@ Since smartphones offer location awareness and mobility, they are the obvious pl
 
 The second aspect of ``Campus Sherpa'' that we wished to support is to allow users to chronicle their tours and share them with others. As prospective students compare MIT to other schools or as tourists reminisce about their visit to MIT, the ability to record their tours (by associating locations with text, photos, videos, and links to related content) will aid them in remembering. For current students, this offers a way to record the precious memories they make at MIT and share them with others. Thus, the primary audience will be people who aim to tour MIT and record their experience there. The secondary audience will be current MIT students who would like to chronicle their lives at MIT.
 
-While some MIT tours will be pre-installed, the majority should be user-created.
-Based on our own experiences and the responses to our survey, people have varied tastes and desired destinations when visiting MIT, and we aimed to make sure that their trip to MIT is as enjoyable and productive as possible.
+While some MIT tours will be pre-installed, the majority are intended to be user-created.
+Based on our own experiences and the responses to our survey, people have varied tastes and desired destinations when visiting MIT, and we aimed to make sure that their trips to MIT are as enjoyable and productive as possible.
 
 By creating an application to let users create, share, and follow custom tours of MIT, we hope to make college tours custom fit to each person's taste, to make memories of MIT easy to record and share, and to make a platform for sharing tours.
 
@@ -240,7 +241,7 @@ By creating an application to let users create, share, and follow custom tours o
 	\item Create tours based on experiences.
 \end{itemize}
 
-When users launch the application, they are presented with a screen (Figure \ref{fig:TourBrowser}) that lists all tours that have been created (by any user). If they would like to take a tour, they can select one from the list, and they will be directed to a "Start Tour" page (Figure \ref{fig:TourPreview}), which includes a map of all of the locations on the tour. If any of the location pins are clicked, the name of the corresponding location is shown.
+When users launch the application, they are presented with a screen (Figure \ref{fig:TourBrowser}) that lists all tours that have been created (by any user). If they would like to take a tour, they can select one from the list, and they will be directed to a ``Start Tour'' page (Figure \ref{fig:TourPreview}), which includes a map of all of the locations on the tour. If any of the location pins are clicked, the name of the corresponding location is shown.
 
 \begin{figure}
 \centering
@@ -283,7 +284,7 @@ If the user clicks ``See Media'', then a list of media is displayed (Figure \ref
 \label{fig:AudioRecord}
 \end{figure}
 
-The second part of Campus Sherpa is the tour creation aspect. Initially, tour creation was done in just two screens, but field testing showed that users were confused by the large number of UI elements on one screen. So, the app was update and tour creation was broken into multiple screens. For instance, Figure \ref{fig:TourName}, asks the user to enter the tour name.
+The second part of Campus Sherpa is the tour creation aspect. Initially, tour creation was done in just two screens, but field testing showed that users were confused by the large number of UI elements on one screen. So, the app was updated and tour creation was broken into multiple screens. For instance, Figure \ref{fig:TourName} asks the user to enter the tour name.
 
 \begin{figure}
 \centering
@@ -292,7 +293,7 @@ The second part of Campus Sherpa is the tour creation aspect. Initially, tour cr
 \label{fig:TourName}
 \end{figure}
 
-Then, the user enters the location. To simplify location entry, we either utilize the GPS to locate the user's location (i.e. ``Use Current Location'') or we allow the user to enter the address (i.e. ``Use Above Address''). The address is converted to a latitude/longitude pair using the Google Maps API. The location entry screen is shown in  Figure \ref{fig:EnterLocation}. By modifying the tour creation mechanism as described, users were able to create tours with less difficulty and were easily able to navigate through the app.
+Then, the user enters the location. To simplify location entry, we either utilize the GPS to identify the user's current location (i.e. ``Use Current Location'') or we allow the user to enter the address (i.e. ``Use Above Address''). The address is converted to a latitude/longitude pair using the Google Maps API. The location entry screen is shown in  Figure \ref{fig:EnterLocation}. By modifying the tour creation mechanism as described, users were able to create tours with less difficulty and were more easily able to navigate through the app.
 
 \begin{figure}
 \centering
@@ -302,7 +303,7 @@ Then, the user enters the location. To simplify location entry, we either utiliz
 \end{figure}
 
 \subsection{Technical Details}
-We use Parse for the backend. Parse is a backend-as-a-service which provides an SDK for iOS which allows users to persist objects in tables on the server. We chose Parse because it provided all the backend infrastructure we needed and it allowed us to focus on the interface and usability of the app. On Parse, we persist four kinds of objects. 
+We use Parse for the backend. Parse is a backend-as-a-service which provides an SDK for iOS which allows users to persist objects in tables on the server. We chose Parse because it provided all the backend infrastructure we needed and it allowed us to focus on the interface and usability of the app. On Parse, we persist four kinds of objects:
 
 \begin{itemize}
 \item \textbf{Tour}, which consists of a name, description, thumbnail, and list of locations
@@ -313,10 +314,10 @@ We use Parse for the backend. Parse is a backend-as-a-service which provides an 
 
 We utilized Parse Analytics and Parse queries to analyze usage statistics and log messages. 
 
-The application is implemented for iOS 7 using the Objective-C programming language. The application is designed using native UI controls (paper prototyping showed that users were not able to recognize custom controls). The layout and navigation were designed in according to the Apple Human Interface Guidelines.
+The application is implemented for iOS 7 using the Objective-C programming language. The application is designed using native UI controls (paper prototyping showed that users were not able to recognize custom controls). The layout and navigation were designed according to the Apple Human Interface Guidelines.
     
 \section{Field Study}
-Since our app is targeted at tourists of MIT, a demographic we did not have ready access to, we primarily focused on gathering information from two more available groups: iOS experts, who could critique the user experience of the app, and recent prefrosh (current MIT freshmen), who could asses the app's utility for prospective students. We had 4 students from each group take one tour (a brief tour of some locations in the Infinite Corridor) and make one tour, and we took notes on any difficulties they seemed to be experiencing while using the app. After they finished both tasks, we asked them for any feedback they had. We used a few standard questions:
+Since our app is targeted at tourists of MIT, a demographic we did not have ready access to, we primarily focused on gathering information from two more readily available groups: iOS experts, who could critique the user experience of the app, and recent prefrosh (current MIT freshmen), who could assess the app's utility for prospective students. We had four students from each group take one tour (a brief tour of some locations in the Infinite Corridor) and make one tour, and we took notes on any difficulties they seemed to be experiencing while using the app. After they finished both tasks, we asked them for any feedback they had. We used a few standard questions:
 \begin{itemize}
 \item What additional features might it be useful for this app to have?
 \item Was any part of the user experience awkward or difficult?
@@ -324,21 +325,21 @@ Since our app is targeted at tourists of MIT, a demographic we did not have read
 \end{itemize}
 We received a large volume of feedback. Some of the most common responses and insights follow:
 \begin{itemize}
-\item The "Show Map" screen (visible when taking a tour, looks much like Figure \ref{start-tour}) should have shown the pin for the current location in a different color.
+\item The ``Show Map'' screen (visible when taking a tour, looks much like Figure~ \ref{fig:TourPreview}) should have shown the pin for the current location in a different color.
 \item The keyboard on many screens was hard to dismiss -- the iOS experts suggested converting many of the views to ScrollViews so that users could scroll down to see elements obscured by a keyboard.
 \item If one location has a picture and the subsequent location does not (when taking a tour), the subsequent location's picture is set to the first location's picture, causing confusion.
-\item The workflow for the make tour portion of the app was a bit confusing -- the "Publish Tour" button appeared too early, so users sometimes clicked it before adding any locations to the tour.
+\item The workflow for the make tour portion of the app was a bit confusing -- the ``Publish Tour'' button appeared too early, so users sometimes clicked it before adding any locations to the tour.
 \item It would be nice if the app provided users directions to get one from one location to the next.
 \end{itemize}
 We modified the app to address the most common concerns of the testers. An interesting use case we discovered from running the field study is that many users actually like to step through tours in the app without actually moving physically from place to place. Thus, our app could prove incredibly useful to prospective students who are unable to visit the campus but want a sense for the rich variety of locations and sights at MIT. This use case could also help people plan what places they would like to visit during a trip to MIT. In essence, the app, if populated with a sufficient number of user-generated tours, could serve as a catalog of all of the interesting sets of related locations on campus.
 
 After they tested the app, the testers were asked to fill out a brief survey consisting of the following questions, with responses being ratings on a 1-to-5 scale:
 \begin{itemize}
-\item How useful do you think this app would have been for you during CPW?, with 1 being "Don't think tours would have played a big role in my decision, or tour guide-led tours would have been more than enough" and 5 being "Seeing different parts of campus would have been crucial to my decision, and this app would have helped me with that"
-\item As a current MIT student, could you see yourself using this app to explore different parts of campus when you had some free time?, with 1 being "Not at all" and 5 being "Definitely"
-\item Could you see this app being useful to tourists who want to get a better sense of MIT?, with 1 being "No, there are much better ways to do this" and 5 being "Yes, this app could offer much more information than tour guide-led tours or other options"
+\item How useful do you think this app would have been for you during CPW?, with 1 being ``Don't think tours would have played a big role in my decision, or tour guide-led tours would have been more than enough'' and 5 being ``Seeing different parts of campus would have been crucial to my decision, and this app would have helped me with that''
+\item As a current MIT student, could you see yourself using this app to explore different parts of campus when you had some free time?, with 1 being ``Not at all'' and 5 being ``Definitely''
+\item Could you see this app being useful to tourists who want to get a better sense of MIT?, with 1 being ``No, there are much better ways to do this'' and 5 being ``Yes, this app could offer much more information than tour guide-led tours or other options''
 \end{itemize}
-With the second question we explored yet another use case -- the physical tour for people who are already familiar with MIT in general but might want to explore a very niche part of campus. For example, there could be a tour with destinations popular for "hacking," which might include the roofs of various buildings and instructions on how to reach them. The results of this survey are plotted in Figure \ref{survey-results}. The results seem to indicate that users are very optimistic about the utility of the app to tourists, but are more skeptical about its usefulness to prospective undergraduates. This is reasonable, as it sounded from personal conversations that the CPW experience is more about meeting other future students than exploring every nook and cranny of the campus. The strong response to our second question also indicates that the use case for people already familiar with MIT is legitimate.
+With the second question we explored yet another use case -- the physical tour for people who are already familiar with MIT in general but might want to explore a very niche part of campus. For example, there could be a tour with destinations popular for ``hacking'', which might include the roofs of various buildings and instructions on how to reach them. The results of this survey are plotted in Figure \ref{survey-results}. The results seem to indicate that users are very optimistic about the utility of the app to tourists, but are more skeptical about its usefulness to prospective undergraduates. This is reasonable, as it sounded from personal conversations that the CPW experience is more about meeting other future students than exploring every nook and cranny of the campus. The strong response to our second question also indicates that the use case for people already familiar with MIT is legitimate.
 
 \begin{figure}
 \centering
@@ -347,9 +348,9 @@ With the second question we explored yet another use case -- the physical tour f
 \label{survey-results}
 \end{figure}
 
-We also added quite a bit of logging to the code for our app. A summary of the logging output over all uses of the app by testers is shown in Tables \ref{logging-results-take} and \ref{logging-results-make}. There are many interesting conclusions we can derive from this data. Starting with Table \ref{logging-results-take}, we can see that the ``See Media" button (``Opened media list") was clicked on at least one location in fewer than half of the cases where a tour was taken (``Started taking a tour"). This tells us that the ``See Media" button should have been made more prominent.
+We also added quite a bit of logging to the code for our app. A summary of the logging output over all uses of the app by testers is shown in Tables~\ref{logging-results-take} and ~\ref{logging-results-make}. There are many interesting conclusions we can derive from this data. Starting with Table \ref{logging-results-take}, we can see that the ``See Media" button (``Opened media list") was clicked on at least one location in fewer than half of the cases where a tour was taken (``Started taking a tour"). This tells us that the ``See Media" button should have been made more prominent.
 
-Looking at next at Table \ref{logging-results-make}, in many cases where a user started making a tour, he or she did not add any locations to the tour (``Adding location to tour", ``Finished adding location to tour"). This further corroborates the suggestions of testers that we make the ``Add Locations" button more visible on the initial make tour screen and make it more difficult to click the ``Publish Tour" button without adding any locations. Furthermore, it seems that testers used their current GPS location to specify the latitude / longitude coordinates of a new location more often than they explicitly entered a street address. This indicates that they often physically walked to the locations they wanted to add to their tours, which seems reasonable considering tours are meant to cover only locations on the MIT campus. In addition, only a third or fewer of the created tours included any images (``Finished adding image to tour"). We intend for all locations, and certainly all tours, to contain at least one image, so it seems that we should make the add image / media forms more central to the tour creation experience. Finally, there were many cancellations of created locations, which suggests that editing the state of a partially created location was so difficult that users decided to cancel the location altogether and start from scratch.
+Looking next at Table \ref{logging-results-make}, in many cases where a user started making a tour, he or she did not add any locations to the tour (``Adding location to tour", ``Finished adding location to tour"). This further corroborates the suggestions of testers that we make the ``Add Locations" button more visible on the initial make tour screen and make it more difficult to click the ``Publish Tour" button without adding any locations. Furthermore, it seems that testers used their current GPS location to specify the latitude / longitude coordinates of a new location more often than they explicitly entered a street address. This indicates that they often physically walked to the locations they wanted to add to their tours, which seems reasonable considering tours are meant to cover only locations on the MIT campus. In addition, only a third or fewer of the created tours included any images (``Finished adding image to tour"). We intend for all locations, and certainly all tours, to contain at least one image, so it seems that we should make the add image / media forms more central to the tour creation experience. Finally, there were many cancellations of created locations, which suggests that editing the state of a partially created location was so difficult that users decided to cancel the location altogether and start from scratch.
 
 \begin{table}
 \begin{tabular}{|l|l|}\hline
@@ -399,9 +400,9 @@ A relatively simple change that should help in making Campus Sherpa reach more u
 
 The next major milestone for Campus Sherpa is to create a recommendation system which suggests tours (or perhaps combine existing tours) that cater to a user's unique interests. This was omitted from this version of Campus Sherpa because 1) There weren't enough tours such that a recommendation system would be useful, and 2) The algorithmic and machine learning challenges of building a recommendation system were outside the scope of the class. Moreover, we felt that they were too complex for a proof of concept application. 
 
-In similar spirit to the recommendation system is the integration of popular social applications such as Twitter and Facebook. This will enable users and tour creators to utilize the existing vast reach of networks such as Facebook to advertise a newly created tour. The success of Campus Sherpa is closely tied to the spread of awareness about it, because with very few users, not many tours get published and with a lack of good tours, the purpose of Campus Sherpa is defeated. We believe that social networks can play a critical role in making a large number of people aware of the app and its capabilities. 
+In similar spirit to the recommendation system is the integration of popular social applications such as Twitter and Facebook. This will enable users and tour creators to utilize the existing vast reach of networks such as Facebook to advertise a newly created tour. The success of Campus Sherpa is closely tied to the spread of awareness about it, because with very few users, not many tours get published and with a lack of good tours, one of the main purposes of Campus Sherpa is defeated. We believe that social networks can play a critical role in making a large number of people aware of the app and its capabilities. 
 
-Another possible improvement suggested by our TA is making the user's location a more integral part of the app. Right now, the app can be run in ``armchair tourism'' mode, where a user simply sits somewhere and browses through all available tours. This is positive in some respects, since it allows users to view the available tours prior to experiencing them firsthand on campus. However, this comes at the cost of a loss in immersion. One way to address this is the creation of a new mode where users can take a tour ``realistically''. For instance, only tour locations near the user's current geographic location can highlighted, and the rest are grayed out. 
+Another possible improvement suggested by our TA is making the user's location a more integral part of the app. Right now, the app can be run in ``armchair tourism'' mode, where a user simply sits somewhere and browses through all available tours. This is positive in some respects, since it allows users to view the available tours prior to experiencing them firsthand on campus. However, this comes at the cost of a loss in immersion. One way to address this is the creation of a new mode where users can take a tour ``realistically''. For instance, only tour locations near the user's current geographic location can be highlighted, and the rest are grayed out/disabled. 
 
 \section{Conclusion}
 
