@@ -1,3 +1,22 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
+
+\bibitem{Abowd:1997:CMC:272186.272199}
+Abowd, G.~D., Atkeson, C.~G., Hong, J., Long, S., Kooper, R., and Pinkerton, M.
+\newblock Cyberguide: A mobile context-aware tour guide.
+\newblock {\em Wirel. Netw. 3}, 5 (Oct. 1997), 421--433.
+
+\bibitem{Luz:2013:CIT:2494444.2494449}
+Luz, N., Almeida, A., Anacleto, R., and Silva, N.
+\newblock Collective intelligence in toursplan: An online tourism social
+  network with planning and recommendation services.
+\newblock In {\em Proceedings of the International C* Conference on Computer
+  Science and Software Engineering}, C3S2E '13, ACM (New York, NY, USA, 2013),
+  42--48.
+
+\bibitem{Zarmpou:2013:MTM:2490257.2490295}
+Zarmpou, T., Drosopoulou, C., and Vlachopoulou, M.
+\newblock Mapping the tourism mobile applications: What, how and where.
+\newblock In {\em Proceedings of the 6th Balkan Conference in Informatics}, BCI
+  '13, ACM (New York, NY, USA, 2013), 206--212.
 
 \end{thebibliography}
